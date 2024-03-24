@@ -14,4 +14,13 @@ const AggregatedSalesSchema = new mongoose.Schema({
     type: Number,
     required: true
   },
- 
+  totalRevenue: {
+    type: Number,
+    required: true
+  }
+});
+
+// Create Mongoose model for aggregated sales results
+const Agg_Sales = mongoose.model('Agg_Sales', AggregatedSalesSchema);
+
+module.exports = Agg_Sales;
