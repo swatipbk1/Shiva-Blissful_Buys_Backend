@@ -8,3 +8,10 @@ const AggregatedSalesSchema = new mongoose.Schema({
   },
   productDescription: {
     type: String,
+    required: true
+  },
+  totalQuantitySold: {
+    type: Number,
+    required: true
+  },
+ 
