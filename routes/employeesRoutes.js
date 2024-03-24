@@ -66,3 +66,8 @@ router.put('/:id', async (req, res)=>{
 });
 
 // DELETE method to delete an Employee
+router.delete('/:id', async (req, res) => {
+    try{
+        const employeeId = req.params.id; // Extract the Employee's ID from the URL parameter
+        
+ 
