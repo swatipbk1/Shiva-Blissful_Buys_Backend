@@ -42,7 +42,14 @@ const productSchema = new mongoose.Schema({
         type: String,
         required: true
     },
-    d
+    discount: String,
+    tagline: String,
+    category: {
+        type: String,
+        required: true
+    }
+});
+
 // Create a Mongoose model for the product schema
 const Product = mongoose.model('Product', productSchema);
 
