@@ -172,4 +172,14 @@ const employees = [
             "job_title": "Customer Service Representative",
             "reporting_manager": "Manager J",
             "employee_type": "Full Time",
-         
+            "employee_status": "Permanent",
+            "mobile": "123-123-1234",
+            "email": "sarah@example.com",
+            "address": "456 Cedar St, Town",
+            "salary": 65000,
+            "department_id": "001"
+        }
+    
+];
+
+module.exports = employees;
