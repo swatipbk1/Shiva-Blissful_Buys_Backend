@@ -59,3 +59,18 @@ http
 Copy code
 PATCH /api/employees/011
 Content-Type: application/json
+
+{
+  "employee_name": "Amanda White",
+  "age": 29,
+  "job_title": "Senior Sales Representative",
+  "salary": 60000
+}
+Delete Employee:
+
+http
+Copy code
+DELETE /api/employees/011
+Base URL
+http://localhost:4000/api/employees
+Make sure to replace :employee_id with the actual ID of the employee you want to perform operations on.
