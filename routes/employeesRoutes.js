@@ -42,13 +42,13 @@ router.get('/:employee_id', async (req, res) =>{
     }
 });
 
-// PUT method to update an Employee
-router.put('/:id', async (req, res)=>{
+// PATCH method to update an Employee (partial update)
+router.patch('/:employee_id', async (req, res)=>{
     try{
-        const employeeId = req.params.id; // Extract the id of Employee from the URL parameter
+        const employeeId = req.params.employee_id; // Extract the id of Employee from the URL parameter
         const updatedEmployeeData = req.body; // Updated data for the Employee
 
-        const response = await Employee.findByIdAndUpdate(employeeId, updatedEmployeeData, {
+        const response = await Employee.findOneAndUpdate({employee_id: employeeId}, updatedEmployeeData, {
             new: true, // Return the updated document
             runValidators: true, // Run Mongoose validation
         });
@@ -57,7 +57,7 @@ router.put('/:id', async (req, res)=>{
             return res.status(404).json({ error: 'Employee not found' });
         }
 
-        console.log('Employee data updated');
+        console.log('Employee data updated (PATCH)');
         res.status(200).json(response);
     }catch(err){
         console.log(err);
@@ -65,21 +65,33 @@ router.put('/:id', async (req, res)=>{
     }
 });
 
+
+
+
+
+
+
+
+
+
+
+
 // DELETE method to delete an Employee
-router.delete('/:id', async (req, res) => {
-    try{
-        const employeeId = req.params.id; // Extract the Employee's ID from the URL parameter
-        
-        const response = await Employee.findByIdAndRemove(employeeId);
-        if (!response) {
+router.delete('/:employee_id', async (req, res) => {
+    try {
+        const { employee_id } = req.params;
+        const deletedEmployee = await Employee.findOneAndDelete({ employee_id });
+        if (!deletedEmployee) {
             return res.status(404).json({ error: 'Employee not found' });
         }
-        console.log('Employee data deleted');
-        res.status(200).json({message: 'Employee Deleted Successfully'});
-    }catch(err){
-        console.log(err);
-        res.status(500).json({error: 'Internal Server Error'});
+        res.status(200).json({ message: 'Employee deleted successfully' });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ error: 'Internal Server Error', message: error.message });
     }
 });
+
+
+
 
 module.exports = router;
