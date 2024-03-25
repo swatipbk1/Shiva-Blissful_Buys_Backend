@@ -11,15 +11,15 @@ Request Body:
 json
 Copy code
 {
-"name": "John Doe",
-"age": 30,
-"work": "chef",
-"mobile": "123-456-7890",
-"email": "john@example.com",
-"address": "123 Main St, City",
-"salary": 50000,
-"username": "john_doe",
-"password": "password123"
+    "name": "John Doe",
+    "age": 30,
+    "work": "chef",
+    "mobile": "123-456-7890",
+    "email": "john@example.com",
+    "address": "123 Main St, City",
+    "salary": 50000,
+    "username": "john_doe",
+    "password": "password123"
 }
 Instructions:
 Set the request method to POST.
@@ -42,15 +42,15 @@ Request Body:
 json
 Copy code
 {
-"name": "John Doe",
-"age": 31,
-"work": "chef",
-"mobile": "123-456-7890",
-"email": "john@example.com",
-"address": "123 Main St, City",
-"salary": 55000,
-"username": "john_doe",
-"password": "password123"
+    "name": "John Doe",
+    "age": 31,
+    "work": "chef",
+    "mobile": "123-456-7890",
+    "email": "john@example.com",
+    "address": "123 Main St, City",
+    "salary": 55000,
+    "username": "john_doe",
+    "password": "password123"
 }
 Instructions:
 Set the request method to PUT.
@@ -66,9 +66,16 @@ Request Body:
 json
 Copy code
 {
-"age": 32,
-"salary": 60000
+    "age": 32,
+    "salary": 60000
 }
 Instructions:
 Set the request method to PATCH.
 Use the URL http://localhost:3000/api/persons/:id, replacing :id with the ID of the person you want to partially update.
+Set the Content-Type header to application/json.
+Include the partial person details to update in the request body as shown in the example.
+Delete a Person (DELETE):
+Request Method: DELETE
+URL: http://localhost:3000/api/persons/:id
+Instructions:
+S
