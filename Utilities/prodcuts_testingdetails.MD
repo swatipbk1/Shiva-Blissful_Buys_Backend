@@ -1,4 +1,5 @@
 # Blissful Buys API - Product Management
+
 Welcome to the Blissful Buys API for managing products. This section of the API allows you to perform various operations related to products within the Blissful Buys platform. Below are instructions on how to interact with the API endpoints related to products.
 
 API Endpoints
@@ -9,23 +10,23 @@ Headers:
 Content-Type: application/json
 Request Body:
 {
-  "_id": "65fe6230d79d662ed22956e9",
-  "title": {
-    "shortTitle": "Home & Kitchen",
-    "longTitle": "Pigeon FAVOURITE Electric Kettle  (1.5 L, Silver, Black)"
-  },
-  "price": {
-    "mrp": 1195,
-    "cost": 625,
-    "discount": "47%"
-  },
-  "prod_id": "product1",
-  "url": "https://rukminim1.flixcart.com/image/150/150/kapoo7k0/electric-kettle/p/6/s/pigeon-favourite-original-imafs7xhj5uwgrh4.jpeg?q=70",
-  "detailUrl": "https://rukminim1.flixcart.com/image/416/416/kapoo7k0/electric-kettle/p/6/s/pigeon-favourite-original-imafs7xhj5uwgrh4.jpeg?q=70",
-  "description": "Updated description goes here...",
-  "discount": "Updated discount goes here...",
-  "tagline": "Updated tagline goes here...",
-  "category": "Updated category goes here..."
+"\_id": "65fe6230d79d662ed22956e9",
+"title": {
+"shortTitle": "Home & Kitchen",
+"longTitle": "Pigeon FAVOURITE Electric Kettle (1.5 L, Silver, Black)"
+},
+"price": {
+"mrp": 1195,
+"cost": 625,
+"discount": "47%"
+},
+"prod_id": "product1",
+"url": "https://rukminim1.flixcart.com/image/150/150/kapoo7k0/electric-kettle/p/6/s/pigeon-favourite-original-imafs7xhj5uwgrh4.jpeg?q=70",
+"detailUrl": "https://rukminim1.flixcart.com/image/416/416/kapoo7k0/electric-kettle/p/6/s/pigeon-favourite-original-imafs7xhj5uwgrh4.jpeg?q=70",
+"description": "Updated description goes here...",
+"discount": "Updated discount goes here...",
+"tagline": "Updated tagline goes here...",
+"category": "Updated category goes here..."
 }
 Instructions
 Set the request method to POST.
@@ -56,3 +57,19 @@ PATCH
 URL:
 http://localhost:3000/api/products/:id
 Headers:
+Content-Type: application/json
+Request Body:
+json
+Copy code
+{
+"discount": "Extra 10% Off",
+"tagline": "Deal of the day",
+"category": "Appliances"
+}
+Response:
+Status: 200 OK
+Body: The updated product object.
+
+Delete a Product (DELETE):
+Request Method: DELETE
+URL: http://localhost:3000/api/products/:id
