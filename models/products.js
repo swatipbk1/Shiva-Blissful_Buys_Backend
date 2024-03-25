@@ -41,3 +41,9 @@ const productSchema = new mongoose.Schema({
     description: {
         type: String,
         required: true
+    },
+    d
+// Create a Mongoose model for the product schema
+const Product = mongoose.model('Product', productSchema);
+
+module.exports = Product; // Export Product instead of Products
