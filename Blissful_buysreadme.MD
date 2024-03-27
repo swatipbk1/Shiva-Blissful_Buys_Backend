@@ -40,3 +40,14 @@ Testing details for each API endpoint are defined in the respective utility fold
 employees_testingdetails.md
 products_testingdetails.md
 sales_testingdetails.md
+AggregatedSales_testingdetails.md
+Additionally, an index on the schema model has been implemented for improved performance.
+
+These instructions provide a clear guide on how to interact with the Blissful Buys backend API and where to find associated testing details. Adjust URLs and headers as needed for your specific environment.
+
+Setup Instructions
+Clone the Repository: Clone the Blissful Buys project repository to your local machine.
+Install Dependencies: Run npm install to install all project dependencies.
+Start the Server: Start the server using node server.js.
+Access API Endpoints: Access the API endpoints mentioned above to interact with the backend.
+Note: This backend setup is designed to work seamlessly with the Blissful Buys frontend to provide a complete e-commerce solution and employee management system. Ensure proper integration with frontend components to display and filter employee data effectively for business intelligence purposes.
