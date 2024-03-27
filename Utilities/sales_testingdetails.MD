@@ -1,5 +1,5 @@
-Blissful Buys API - Sales Management
-Welcome to the Blissful Buys API for managing sales. This section of the API allows you to perform various operations related to sales within the Blissful Buys platform. Below are instructions on how to interact with the API endpoints related to sales.
+SHIVA Enterprises - Sales Management
+Welcome to the SHIVA Enterprises for managing sales. This section of the API allows you to perform various operations related to sales within the SHIVA Enterprises platform. Below are instructions on how to interact with the API endpoints related to sales.
 
 API Endpoints
 Create a New Sale (POST)

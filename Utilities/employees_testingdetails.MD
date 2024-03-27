@@ -1,5 +1,5 @@
-Blissful Buys API - Employee Management
-Welcome to the Blissful Buys API for managing employees. This section of the API allows you to perform various operations related to employees within the Blissful Buys organization. Below are instructions on how to interact with the API endpoints related to employees.
+SHIVA Enterprises API - Employee Management
+Welcome to the SHIVA Enterprises API for managing employees. This section of the API allows you to perform various operations related to employees within the Blissful Buys organization. Below are instructions on how to interact with the API endpoints related to employees.
 
 Add an Employee
 

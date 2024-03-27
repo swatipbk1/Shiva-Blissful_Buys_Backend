@@ -1,5 +1,5 @@
-Blissful Buys Project Backend
-Welcome to the Blissful Buys project backend setup. This project serves as the backend infrastructure for managing products, sales data, aggregated sales data, and employee information for the Blissful Buys platform. We have thoroughly tested the routes to retrieve and manipulate data, which will be used to populate and display products on the website, provide business intelligence insights, and manage employee records.
+SHIVA Enterprises Project Backend
+Welcome to the SHIVA Enterprises project backend setup. This project serves as the backend infrastructure for managing products, sales data, aggregated sales data, and employee information for the SHIVA Enterprises platform. We have thoroughly tested the routes to retrieve and manipulate data, which will be used to populate and display products on the website, provide business intelligence insights, and manage employee records.
 
 Features
 Product Management

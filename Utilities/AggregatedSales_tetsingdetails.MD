@@ -1,5 +1,5 @@
-Blissful Buys API - Aggregated Sales Data
-Welcome to the Blissful Buys API for managing aggregated sales data. This section of the API allows you to perform various operations related to aggregated sales data. Below are instructions on how to interact with the API endpoints for aggregated sales data.
+SHIVA Enterprises API - Aggregated Sales Data
+Welcome to the SHIVA Enterprises API for managing aggregated sales data. This section of the API allows you to perform various operations related to aggregated sales data. Below are instructions on how to interact with the API endpoints for aggregated sales data.
 
 API Endpoints
 GET Aggregated Sales Data

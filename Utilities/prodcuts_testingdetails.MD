@@ -1,6 +1,6 @@
-# Blissful Buys API - Product Management
+#SHIVA Enterprises API - Product Management
 
-Welcome to the Blissful Buys API for managing products. This section of the API allows you to perform various operations related to products within the Blissful Buys platform. Below are instructions on how to interact with the API endpoints related to products.
+Welcome to the SHIVA Enterprises API for managing products. This section of the API allows you to perform various operations related to products within the SHIVA Enterprises platform. Below are instructions on how to interact with the API endpoints related to products.
 
 API Endpoints
 Create a New Product (POST):
