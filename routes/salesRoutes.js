@@ -60,3 +60,11 @@ router.patch('/:sales_id', async (req, res) => {
 });
 
 // Delete a sales record by sales_id
+router.delete('/:sales_id', async (req, res) => {
+    try {
+        const { sales_id } = req.params;
+        const deletedRecord = await Sales.findOneAndDelete({ sales_id });
+        if (!deletedRecord) {
+            return res.status(404).json({ error: 'Sales Record not found' });
+        }
+  
