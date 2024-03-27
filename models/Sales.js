@@ -29,3 +29,20 @@ const salesSchema = new mongoose.Schema({
         type: Date,
         required: true
     },
+    totalPrice: {
+        type: Number,
+        required: true
+    }
+});
+
+// Add a pre-save hook to generate a unique sales_id before saving each document
+salesSchema.pre('save', function(next) {
+    // Generate a unique sales_id using uuidv4 function
+    this.sales_id = uuidv4(); // Use uuidv4 to generate a unique ID
+    next();
+});
+
+// Create a Mongoose model for the sales schema
+const Sales = mongoose.model('Sales', salesSchema);
+
+module.exports = Sales;
