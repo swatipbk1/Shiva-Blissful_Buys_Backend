@@ -3,7 +3,7 @@ Welcome to the Blissful Buys API for managing aggregated sales data. This sectio
 
 API Endpoints
 GET Aggregated Sales Data
-URL: http://localhost:3000/api/agg_sales
+URL: http://localhost:4000/api/agg_sales
 Endpoint: /api/agg_sales
 Description: Retrieves all aggregated sales data.
 Method: GET
@@ -28,7 +28,7 @@ Copy code
 ]
 POST Aggregated Sales Data
 Endpoint: /api/agg_sales
-Use the URL http://localhost:3000/api/agg_sales
+Use the URL http://localhost:4000/api/agg_sales
 Description: Creates a new aggregated sales data entry.
 Method: POST
 Request Body: JSON object containing aggregated sales data fields (productId, productDescription, totalQuantitySold, totalRevenue).
@@ -84,7 +84,7 @@ Copy code
 }
 DELETE Aggregated Sales Data
 Endpoint: /api/agg_sales/:id
-http://localhost:3000/api/agg_sales/:id
+http://localhost:4000/api/agg_sales/:id
 Description: Deletes aggregated sales data by its unique ID.
 Method: DELETE
 Parameters: id (Unique identifier of the aggregated sales data).

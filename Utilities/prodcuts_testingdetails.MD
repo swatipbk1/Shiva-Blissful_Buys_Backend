@@ -5,7 +5,7 @@ Welcome to the Blissful Buys API for managing products. This section of the API 
 API Endpoints
 Create a New Product (POST):
 Request Method: POST
-URL: http://localhost:3000/api/products
+URL: http://localhost:4000/api/products
 Headers:
 Content-Type: application/json
 Request Body:
@@ -30,24 +30,24 @@ Request Body:
 }
 Instructions
 Set the request method to POST.
-Use the URL http://localhost:3000/api/products.
+Use the URL http://localhost:4000/api/products.
 Set the Content-Type header to application/json.
 Include the product details in the request body as shown in the example.
 Get All Products (GET):
 Request Method: GET
-URL: http://localhost:3000/api/products
+URL: http://localhost:4000/api/products
 Instructions:
 
 Set the request method to GET.
-Use the URL http://localhost:3000/api/products.
+Use the URL http://localhost:4000/api/products.
 No additional parameters or headers needed.
 Get Product by ID (GET):
 Request Method: GET
-URL: http://localhost:3000/api/products/:id
+URL: http://localhost:4000/api/products/:id
 Instructions:
 
 Set the request method to GET.
-Use the URL http://localhost:3000/api/products/:id, replacing :id with the actual product ID.
+Use the URL http://localhost:4000/api/products/:id, replacing :id with the actual product ID.
 No additional parameters or headers needed.
 Update a Product (PATCH):
 Updates an existing product.
@@ -55,7 +55,7 @@ Updates an existing product.
 Request Method:
 PATCH
 URL:
-http://localhost:3000/api/products/:id
+http://localhost:4000/api/products/:id
 Headers:
 Content-Type: application/json
 Request Body:
@@ -72,4 +72,4 @@ Body: The updated product object.
 
 Delete a Product (DELETE):
 Request Method: DELETE
-URL: http://localhost:3000/api/products/:id
+URL: http://localhost:4000/api/products/:id
