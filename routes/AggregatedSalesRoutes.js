@@ -50,4 +50,7 @@ router.delete('/agg_sales/:id', async (req, res) => {
         const id = req.params.id;
         const deletedAggSales = await Agg_Sales.findByIdAndDelete(id);
         if (!deletedAggSales) {
-        
+            return res.status(404).json({ error: 'Aggregated sales data not found' });
+        }
+        console.log('Aggregated sales data deleted');
+       
