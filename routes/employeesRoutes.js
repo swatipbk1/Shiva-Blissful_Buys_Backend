@@ -80,4 +80,18 @@ router.patch('/:employee_id', async (req, res)=>{
 router.delete('/:employee_id', async (req, res) => {
     try {
         const { employee_id } = req.params;
-       
+        const deletedEmployee = await Employee.findOneAndDelete({ employee_id });
+        if (!deletedEmployee) {
+            return res.status(404).json({ error: 'Employee not found' });
+        }
+        res.status(200).json({ message: 'Employee deleted successfully' });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ error: 'Internal Server Error', message: error.message });
+    }
+});
+
+
+
+
+module.exports = router;
