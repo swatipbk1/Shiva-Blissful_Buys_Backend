@@ -46,4 +46,10 @@ router.patch('/agg_sales/:id', async (req, res) => {
 
 // DELETE method to delete aggregated sales data
 router.delete('/agg_sales/:id', async (req, res) => {
-    
+    try {
+        const id = req.params.id;
+        const deletedAggSales = await Agg_Sales.findByIdAndDelete(id);
+        if (!deletedAggSales) {
+            return res.status(404).json({ error: 'Aggregated sales data not found' });
+        }
+        conso
