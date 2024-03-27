@@ -52,4 +52,12 @@ router.delete('/agg_sales/:id', async (req, res) => {
         if (!deletedAggSales) {
             return res.status(404).json({ error: 'Aggregated sales data not found' });
         }
-        conso
+        console.log('Aggregated sales data deleted');
+        res.status(200).json({ message: 'Aggregated sales data deleted successfully' });
+    } catch (error) {
+        console.error(error);
+        res.status(500).json({ error: 'Internal Server Error' });
+    }
+});
+
+module.exports = router;
